@@ -22,7 +22,7 @@ public class AlphaDirs {
     private static String ROOT_PATH;
     private File mRootFolder;
     /**
-     * /data/data/{package_name}/files/alpha
+     * /data/data/{package_name}/files/alpha (目前不是按照这样的路径,是在闪存储的根目录下的
      */
     private static String APK_PATH;
     private File mApkFolder;
@@ -49,7 +49,7 @@ public class AlphaDirs {
                 + File.separator + "alpha"
                 + File.separator + "apk";
         Log.d(TAG, "apk path:" + APK_PATH);
-        ODEX_PATH = ROOT_PATH + File.separator + "o";
+        ODEX_PATH = ROOT_PATH + File.separator + "odex";
         Log.d(TAG, "odex path:" + ODEX_PATH);
         DEX_PATH = ROOT_PATH + File.separator + "dex";
         Log.d(TAG, "dex path:" + DEX_PATH);
